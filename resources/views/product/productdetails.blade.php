@@ -10,55 +10,55 @@
             <tr>
                 <td>Product Name:</td>
                 <td>
-                    Hawai Shirt Red
+                    {{ $product->p_name }}
                 </td>
             </tr>
             <tr>
                 <td>Product Code:</td>
                 <td>
-                    SHRT203
+                    {{ $product->p_code }}
                 </td>
             </tr>
             <tr>
                 <td>Product Description:</td>
                 <td>
-                    Hawai Shirt
+                    {{ $product->p_desc }}
                 </td>
             </tr>
             <tr>
                 <td>Product Category:</td>
                 <td>
-                    Shirt
+                    {{ $product->p_category }}
                 </td>
             </tr>
             <tr>
                 <td>Price:</td>
                 <td>
-                    250
+                    {{ $product->p_price }}
                 </td>
             </tr>
             <tr>
                 <td>Product Quantity:</td>
                 <td>
-                    15
+                    {{ $product->p_quantity }}
                 </td>
             </tr>
             <tr>
                 <td>Stock Date:</td>
                 <td>
-                    23-02-2020
+                    {{ $product->p_stockdate }}
                 </td>
             </tr>
             <tr>
                 <td>Product Rating:</td>
                 <td>
-                    5
+                    {{ $product->p_rating }}
                 </td>
             </tr>
             <tr>
                 <td>Purchased:</td>
                 <td>
-                    5
+                    {{ $product->p_purchased }}
                 </td>
             </tr>
             <tr>

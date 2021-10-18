@@ -22,19 +22,21 @@
         <th></th>
         <th></th>
         <th></th>
+        @foreach ($products as $product)
         <tr>
-            <td>yo</td>
-            <td>yo</td>
-            <td>yo</td>
-            <td>yo</td>
-            <td>yo</td>
-            <td>yo</td>
-            <td>yo</td>
-            <td>yo</td>
-            <td>yo</td>
-            <td><a href="{{ route('details',1) }}"><button class="btn btn-outline-info">Details</button></a></td>
-            <td><a href="{{ route('edit',1) }}"><button class="btn btn-outline-success">Edit</button></a></td>
-            <td><button class="btn btn-outline-danger">Delete</button></td>
+            <td>{{ $product->p_name }}</td>
+            <td>{{ $product->p_code }}</td>
+            <td>{{ $product->p_desc }}</td>
+            <td>{{ $product->p_category }}</td>
+            <td>{{ $product->p_price }}</td>
+            <td>{{ $product->p_quantity }}</td>
+            <td>{{ $product->p_stockdate }}</td>
+            <td>{{ $product->p_rating }}</td>
+            <td>{{ $product->p_purchased }}</td>
+            <td><a href="{{ route('details',$product->id) }}"><button class="btn btn-outline-info">Details</button></a></td>
+            <td><a href="{{ route('edit',$product->id) }}"><button class="btn btn-outline-success">Edit</button></a></td>
+            <td><a href="{{ route('delete',$product->id) }}"><button class="btn btn-outline-danger">Delete</button></a></td>
         </tr>
+        @endforeach
     </table>
 @endsection
